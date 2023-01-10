@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+    <style>
+        body{
+            background-image: url("https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp");
+            color: white;
+            background-color: rgba(0, 0, 0, 0.925);
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .center{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font-size: 13ch;
+            overflow: hidden;
+            white-space: nowrap;
+		    border-right-style: solid;
+            animation: github 2s;
+        }
+        @keyframes github{
+		0%{
+			width:0ch;
+		}
+		100%{
+			width: 100%;
+		}
+	    }
+        .point2{
+            animation: nothingnu 2s;
+            animation-delay: 2s;
+            color: white;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        @keyframes nothingnu{
+            0%{
+                width: 0ch;
+                color: white;
+            }
+            100%{
+                width: 100%;
+                color: white;
+            }
+        }
+        .signup{
+            position: absolute;
+            top: 55%;
+            left:5%;
+        }
+        .Emailid{
+            width: 20ch;
+            height: 5ch;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            font-size: 2ch;
+            font-weight: bold;
+            border-color: #6e40c9;
+            text-align: center;
+            transition: 1s;
+        }
+        .Emailid:hover{
+            width: 30ch;
+        }
+        .buttonsignup{
+            width: 20ch;
+            height: 5ch;
+            color: white;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: #6e40c9;
+            font-size: 2ch;
+            border-color: #6e40c9;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        .buttonsignup:hover{
+            background-color: white;
+            color: #6e40c9;
+        }
+        .drone{
+            animation-duration: 4s;
+            animation-name: fly;
+            position: relative;
+            animation-iteration-count: infinite;
+            overflow: hidden;
+        }
+        @keyframes fly{
+            0%{
+                top: 20%;
+                left: 10%;
+            }
+            50%{
+                top: 10%;
+                left: 20%;
+            }
+            100%{
+                top: 20%;
+                left: 10%;
+            }
+        }
+        .art1{
+            position: absolute;
+            top: 110%;
+            left: 10%;
+            color: darkgray;
+            background-image: url(https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp);
+        }
+        .brand{
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20px;
+            border-style: solid;
+            color: darkgrey;
+            width: ;
+            display: inline-block;
+            background-image: url(https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp);
+        }
+        .gogreen{
+            color: #7ee787;
+        }
+        .productivity{
+            background-image: url(https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp);
+            color: white;
+            font-size: 4ch;
+            font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-feature-settings: unset;
+            
+        }
+        .Codespaces{
+            font-size: 3ch;
+            color: white;
+            font-weight: bolder;
+            font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-feature-settings: unset;
+        }
+        .didyouknow{
+            border-radius: 40px;
+            border-style: solid;
+            margin: 4px;
+            padding: 4px;
+            color: #7ee787;
+            border-color: #7ee787;
+            font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-feature-settings: unset;
+            font-weight: bold;
+            transition-duration: 1s;
+        }
+        .didyouknow:hover{
+            background-color: #7ee787;
+            color: rgba(255, 255, 255, 0.863);
+            
+        }
+        .copilot{
+            border-style: solid;
+            
+            width: 80%;
+            margin: 4ch;
+            font-size: 3ch;
+            padding: 4ch;
+            left: 0%;
+            position: absolute;
+            color: white;
+            border-color: #7ee787;
+            font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-feature-settings: unset;
+            font-weight: bold;
+        }
+        .big{
+            font-size: 13ch;
+            font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-feature-settings: unset;
+        }
+        .holo{
+            width: 20ch;
+            position: absolute;
+            left: 60%;
+        }
+        .stipe{
+            position: initial;
+        }  
+    </style>
+</head>
+<body>
+    <div class="drone"><img src="https://github.githubassets.com/images/modules/site/home-campaign/hero-drone.webp" alt="Drone" class="home-drone position-absolute top-12 right-0 events-none col-3 height-auto js-build-in-item build-in-animate" width="500" height="326">
+    </div>
+    <div class="center">
+        <h1>GitHub</h1>
+    <br><h2><div class="point2"> Let’s build from here</div></h2>
+    <br><h3>Harnessed for productivity. Designed for collaboration. Celebrated for built-in security. Welcome to the platform developers love. </h3>
+    </div>
+    <div class="signup"><form><input type="text" placeholder="Email Id" class="Emailid" required><button class="buttonsignup">Sign Up for GitHub</button></form></div>
+    <!--artical page start from here --->
+    <div class="art1"><h3>Trusted by the world’s leading organizations.</h3>
+        
+        <br>
+        <p><div class="brand"><img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/mercedes.svg" alt="mercedes" height="50ch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/kpmg.svg" alt="kpmg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pg.svg" alt="P&G">      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pinterest.svg" alt="pinterest">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  <img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/stripe.svg" alt="stripe">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <img src="https://github.githubassets.com/images/modules/site/home-campaign/logos/telus.svg" alt="telus"></div></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3><img src="https://res.cloudinary.com/hcti/image/fetch/c_limit,f_auto,q_auto:good,w_400/https://docs.htmlcsstoimage.com/assets/images/cat.png" width="100ch">Productivity</h3>
+        <br>
+        <h2 class="productivity"><div class="gogreen">Accelerate high-quality software development.</div> Our platform drives innovation with tools that boost developer velocity.</h2>
+        <br>
+        <br>
+        <br>
+        <div class="Codespaces"><div class="gogreen">Codespaces</div> offers a complete dev environment in seconds, so you can code, build, test, and open pull requests from any repo anywhere.</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span class="didyouknow">Did you know?</span>
+            <div class="gogreen , big">22% increase</div>
+            <div class="codespaces">in developer productivity
+                after three years with GitHub.</div>
+                <br>
+    <br>
+    <br>
+    <div class="copilot"><img src="https://cdn.dribbble.com/users/776205/screenshots/3857304/media/ebcb3befb35eeb78c0466d06ff244d25.gif" alt="Hologram" class="holo">GitHub Copilot is your AI pair <br>
+         programmer that empowers you to<br>
+          complete tasks 55% faster by turning <br>natural language prompts into coding<br> suggestions.</div>
+    </div>
+    
+</body>
+</html>
