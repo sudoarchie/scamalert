@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajkiya Engineering Collage Bijnor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: ;
+            background-color: ;
+        }
+
+        .heading {
+            /* width: 100vw */
+        }
+
+        .logo {
+            width: 100vw;
+        }
+
+        .nav {
+            display: flex;
+            font-family: 'Oswald', sans-serif;
+            justify-content: space-evenly;
+            background-color: rgb(71, 71, 190);
+            font-weight: 800;
+            font-size: 20px;
+            /*font-style: italic; */
+            width: 100vw;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .navelem {
+            align-self: center;
+            list-style: none;
+            color: white;
+            margin: 20px;
+            padding: 20px;
+            transition-property: all;
+            transition-duration: 1s;
+
+        }
+
+        .navelem:hover {
+            background-color: white;
+            color: rgb(71, 71, 190);
+            border-style: solid;
+            border-radius: 20px;
+            border-color: blue;
+            border-width: 2px;
+        }
+
+        #submenu {
+            display: none;
+            list-style: none;
+            position: relative;
+        }
+
+        .submenuelem {
+            border: 2px solid royalblue;
+            margin-top: 2px;
+            border-radius: 10px;
+            padding-left: 2ch;
+            padding-right: 2ch;
+        }
+
+        .submenuelem:hover {
+            background-color: wheat;
+            color: white;
+        }
+
+        .navelem:hover ul#submenu {
+            display: block;
+            align-self: initial;
+            color: white;
+        }
+
+        .navlinks {
+            text-decoration: none;
+            color: ;
+        }
+
+        .image1 {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100vw;
+            height: 70vh;
+            border: 2px solid red;
+            margin: auto;
+            animation-name: imagechanger;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            opacity: 90%;
+            display: block;
+            transition: 1s;
+            transition-property: all;
+
+
+        }
+
+        .image1text {
+            font-family: 'Oswald', sans-serif;
+
+            position: relative;
+            top: 50vh;
+            left: 50vw;
+        }
+
+        @keyframes imagechanger {
+            0% {
+                background-image: url(https://www.iitb.ac.in/sites/www.iitb.ac.in/files/styles/sliderblock/public/slider/lead-boy.jpg?itok=cmDwEruM);
+                color: black;
+
+            }
+
+            25% {
+                background-image: url(https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=740&t=st=1674844478~exp=1674845078~hmac=4e4b528792c25f038fb8e2f5d850da176dea3da72d538df97dbea533f0f3a2d6);
+                color: white;
+            }
+
+            50% {
+                background-image: url(https://img.freepik.com/free-vector/stream-binary-code-design_53876-97406.jpg?w=740&t=st=1674844503~exp=1674845103~hmac=e88baee92415078b630ac69fc6ee650dc4c795f195fb5e7f363938552ba8a26e);
+                color: white;
+            }
+
+            75% {
+                background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&w=1000&q=80);
+                color: white;
+            }
+
+            100% {
+                background-image: url(https://img.freepik.com/free-photo/3d-render-code-testing-functional-test-usability_107791-16607.jpg?t=st=1674844471~exp=1674845071~hmac=186dee84e70448fd512665b42b445efdc1d48b053508e3d424e503d84cfd026d);
+                color: white;
+            }
+
+        }
+
+        .aboutus {
+            border: 3px solid blue;
+            width: 70vw;
+            padding: 20px;
+        }
+
+
+        .aboutustext {
+            font-family: 'Lobster', cursive;
+            font-weight: 300;
+            color: rgb(40, 78, 192);
+        }
+
+        .aboutusart {
+            font-family: ;
+            font-size: 20px;
+            text-align: justify;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+        }
+
+        #aboutusbutton {
+            color: tomato;
+            border: 2px solid tomato;
+            padding-left: 1ch;
+            padding-right: 1ch;
+            background-color: white;
+            font-size: 18px;
+        }
+
+        #aboutusbutton:hover {
+            background-color: tomato;
+            color: white;
+            box-shadow: 5px 5px 5px blue;
+        }
+
+        .aside {
+            border: 2px solid green;
+            width: 30vw;
+            padding: 2ch;
+            order: 2;
+            justify-items: center;
+            text-align: justify;
+        }
+
+        .asidelem {
+        }
+        
+        .mainarea {
+            display: flex;
+        }
+        .asideul{
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            font-weight: 700;
+        } 
+        .asidelemli{
+            border: 2px solid royalblue;
+            margin: 2px;
+            padding: 2px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .asidelemlink:hover{
+            color: white;
+            background-color: royalblue;
+            
+        }
+        .asidelemlink{
+            color: royalblue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading"><img src="http://recb.ac.in/img/banner1.png" class="logo">
+    </div>
+    <div id="nav">
+        <ul class="nav">
+            <li class="navelem">Home
+
+
+            </li>
+            <li class="navelem">Students
+                <ul id="submenu">
+                    <li class="submenuelem"><a href="#" class="navlinks">Academic Divisions</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Current Students</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Prospective Students</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Gender Cell(FKA Women's cell)</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Student Wellness centre(Counselling Care)</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navelem">Faculty
+                <ul id="submenu">
+                    <li class="submenuelem"><a href="#" class="navlinks">Academic Divisions</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Faculty at RECB</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Prospective Faculty</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Current Faculty</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Retired Faculty</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Awards and Honours</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Chair Professorships</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">RECB Research Park</a></li>
+                </ul>
+            </li>
+            <li class="navelem">Staff
+                <ul id="submenu">
+                    <li class="submenuelem"><a href="#" class="navlinks">Staff Handbook</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Prospective Staff</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Current Staff</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Retired Staff</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Internal Pages</a></li>
+
+
+                </ul>
+            </li>
+            <li class="navelem">Media
+                <ul id="submenu">
+                    <li class="submenuelem"><a href="#" class="navlinks">Public Relation Office</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Social Media Policy</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">News Hub</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Photo Gallery</a></li>
+
+                </ul>
+            </li>
+            <li class="navelem">Alumni
+                <ul id="submenu">
+                    <li class="submenuelem"><a href="#" class="navlinks">RECB Alumni Office</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Alumni Association</a></li>
+                </ul>
+            </li>
+            <li class="navelem">Industry
+                <ul id="submenu">
+                    <li class="submenuelem"><a href="#" class="navlinks">RECB Research Park</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">SINE</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Consultancy and Research</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Continuing Education</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Analytical Measurements</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Technology Transfer & Licensing</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Doner Relationship</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Placements at RECB</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Vendor's Corner</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Tenders</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">GST Registration Details</a></li>
+                </ul>
+            </li>
+            <li class="navelem">Resources
+                <ul id="submenu">
+                    <li class="submenuelem"><a href="#" class="navlinks">Institute Policies</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Faculties at RECB</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Donor Relation Programme</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">IoE</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Gender cell</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Emergency Contact</a></li>
+                    <li class="submenuelem"><a href="#" class="navlinks">Event Calender</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="image1">
+        <h1 class="image1text">RECB</h1><br>
+        <h2 class="image1text">
+            Rajkiya Engineering Collage Bijnor
+        </h2>
+    </div>
+    <div class="mainarea">
+        <div class="aboutus" id="aboutus">
+            <h1 class="aboutustext">
+                About Rajkiya Engineering College Bijnor
+            </h1>
+            <br>
+            <article class="aboutusart">Rajkiya Engineering College Bijnor (Formerly Dr. Bhim Rao Ambedkar Engineering
+                College of Information Technology, Bijnor) was started by Government of Uttar Pradesh, Department of
+                Technical Education under Special Component Plan (SCP), basically a Plan of the Union Government of
+                India
+                for the promotion of technical education into the socially and economically weaker section of the
+                society.
+                The admission to this College started in the year 2010-2011 with three branches Civil Engineering,
+                Electrical Engineering and Information Technology with an intake of 60 in each branch..... <button
+                    id="aboutusbutton">ReadMore</button></article>
+        </div>
+        <div class="aside">
+            <h1 class="aboutustext">Announcements
+            </h1>
+            <div class="asidelem">
+                <ul class="asideul">
+                    <li class="asidelemli"><a href="#" class="asidelemlink">UG New Entrants 2022-23 </a></li>
+                    <li class="asidelemli"><a href="#" class="asidelemlink"> Inviting Nominations for IIT Bombay
+                            International Award 2023</a></li>
+                    <li class="asidelemli"><a href="#" class="asidelemlink"> India's G20 Presidency</a></li>
+                    <li class="asidelemli"><a href="#" class="asidelemlink"> GATE 2023</a></li>
+                    <li class="asidelemli"><a href="#" class="asidelemlink"> CEED 2023</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><br>
+    <div class="aboutus" id="vision">
+        <h1 class="aboutustext">
+
+        </h1>
+        <article class="aboutusart">The institute is recognised worldwide as a leader in the field of engineering
+            education and research. Reputed for the outstanding calibre of students graduating from its undergraduate
+            and postgraduate programmes, the institute attracts the best students from the country for its bachelor's,
+            master's and doctoral programmes. Research and academic programmes at IIT Bombay are driven by an
+            outstanding faculty, many of whom are reputed for their research contributions internationally.
+
+            IIT Bombay also builds links with peer universities and institutes, both at the national and the
+            international levels, to enhance research and enrich its educational programmes. The alumni have
+            distinguished themselves through their achievements in and contributions to industry, academics, research,
+            business, government and social domains. The institute continues to work closely with the alumni to enhance
+            its activities through interactions in academic and research programmes as well as to mobilise financial
+            support.
+
+            Over the years, the institute has created a niche for its innovative short-term courses through continuing
+            education and distance education programmes. Members of the faculty of the institute have won many
+            prestigious awards and recognitions, including the Shanti Swaroop Bhatnagar and Padma awards.
+
+            Located in Powai, one of the northern suburbs of Mumbai, the residents of the institute reap the advantage
+            of being in the busy financial capital of India, while at the same time enjoying the serenity of a campus
+            known for its natural beauty. A fully residential institute, all its students are accommodated in its 15
+            hostels with in-house dining; the campus also provides excellent amenities for sports and other recreational
+            facilities.<button id="aboutusbutton">ReadMore</button></article>
+    </div>
+
+
+</body>
+
+</html>
